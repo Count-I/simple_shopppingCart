@@ -1,0 +1,11 @@
+<div class="product">
+    <h2>{{product.title}}</h2>
+    <div>{{product.brand}}</div>
+    <div>{{product.stock}}</div>
+    <div>{{product.price}}</div>
+    <div class="button">
+        <button>buy</button>
+        <button (click)="addProductToCart(product)" >+</button>
+    </div>
+
+</div>

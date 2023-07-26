@@ -1,0 +1,11 @@
+<div *ngIf="product">
+    <div class="product">
+        <h2>{{product.title}}</h2>
+        <div>{{product.brand}}</div>
+        <div>{{product.stock}}</div>
+        <div>{{product.price}}</div>
+    </div>
+    Cantidad: <input type="number" [(ngModel)]="product.num" min="0" (ngModelChange)="modelChanged($event)"/>
+</div>
+
+
